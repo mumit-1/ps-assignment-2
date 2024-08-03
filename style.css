@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+body {
+  background-color: rgb(0, 0, 0);
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+li,
+p,
+button {
+  font-family: "Inter", sans-serif;
+  color: rgb(255, 255, 255);
+}
+:root {
+  --primary-color: rgb(230, 83, 60);
+}
+.total-width {
+  width: 1050px;
+  margin: 0 auto;
+}
+.display-f-m {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.every-bio {
+  color: rgba(255, 255, 255, 0.5);
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  margin: 0px;
+}
+header {
+  background: linear-gradient(
+    0deg,
+    rgba(17, 17, 17),
+    rgba(253, 253, 253, 0.108) 100%
+  );
+}
+
+.start > .display-f-m {
+  justify-content: space-between;
+  flex-direction: row;
+}
+.nav-head {
+  color: var(--primary-color);
+  font-size: 36px;
+  font-style: italic;
+}
+ul {
+  list-style: none;
+  display: flex;
+  border: 1px solid var(--primary-color);
+  padding: 0;
+  border-radius: 39px;
+}
+li {
+  padding: 10px 19px;
+  align-self: center;
+  margin-right: 20px;
+}
+li:nth-child(1) {
+  background-color: var(--primary-color);
+  margin: 4px 4px;
+  margin-right: 20px;
+  border-radius: 46px;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 42px;
+}
+.head > .display-f-m {
+  align-items: flex-start;
+}
+.head-1st {
+  width: 50%;
+  margin-top: 30px;
+}
+.head-title {
+  font-size: 73px;
+  font-weight: 900;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.head-1st > .every-bio {
+  margin-bottom: 28px;
+}
+.floating-sec-1,
+.floating-sec-2 {
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
+  background: rgba(48, 48, 48, 0.54);
+  padding: 16px 24px;
+}
+.floating-sec-1 {
+  width: 50%;
+  bottom: 61%;
+  left: 60%;
+}
+.floating-sec-2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  bottom: 33.5%;
+  right: 35%;
+  width: 50%;
+}
+.red-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: red;
+  border: 0;
+}
+.span-3,
+.span-2 {
+  margin: 0px;
+  margin-bottom: 00px;
+}
+
+.head-btn {
+  border-radius: 42px;
+  background-color: black;
+  width: 43%;
+  height: 6%;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(230, 83, 60);
+  font-size: 18px;
+  font-weight: 600;
+}
+.btn-1 {
+  background: rgb(230, 83, 60);
+  margin-right: 10px;
+}
+@media screen and (max-width: 576px) {
+  .head {
+    flex-direction: column;
+  }
+  ul {
+    visibility: hidden;
+  }
+}
