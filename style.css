@@ -29,7 +29,7 @@ button {
 .every-bio {
   color: rgba(255, 255, 255, 0.5);
 
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.5px;
@@ -92,6 +92,21 @@ li:nth-child(1) {
 .head-1st > .every-bio {
   margin-bottom: 28px;
 }
+.head-btn {
+  border-radius: 42px;
+  background-color: black;
+  width: 43%;
+  height: 8%;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(230, 83, 60);
+  font-size: 18px;
+  font-weight: 600;
+  
+}
+.btn-1 {
+  background: rgb(230, 83, 60);
+  margin-right: 10px;
+}
 .floating-sec-1,
 .floating-sec-2 {
   position: relative;
@@ -101,22 +116,29 @@ li:nth-child(1) {
   background: rgba(48, 48, 48, 0.54);
   padding: 16px 24px;
 }
+
 .floating-sec-1 {
-  width: 50%;
+  width: 40%;
   bottom: 61%;
   left: 60%;
+}
+.floating-sec-1 > .every-bio{
+  font-size: 13px;
 }
 .floating-sec-2 {
   display: flex;
   align-items: center;
   gap: 10px;
   bottom: 33.5%;
-  right: 35%;
-  width: 50%;
+  right: 33%;
+  width: 45%;
+}
+.floating-sec-2 .every-bio{
+  font-size: 13px;
 }
 .red-circle {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   background-color: red;
   border: 0;
@@ -127,25 +149,80 @@ li:nth-child(1) {
   margin-bottom: 00px;
 }
 
-.head-btn {
-  border-radius: 42px;
-  background-color: black;
-  width: 43%;
-  height: 6%;
-  color: rgb(255, 255, 255);
-  border: 2px solid rgb(230, 83, 60);
-  font-size: 18px;
-  font-weight: 600;
-}
-.btn-1 {
-  background: rgb(230, 83, 60);
-  margin-right: 10px;
-}
+
 @media screen and (max-width: 576px) {
   .head {
     flex-direction: column;
   }
-  ul {
-    visibility: hidden;
+  .total-width{
+    width: 100%;
   }
+  .head-1st{
+    width: 100%;
+  }
+  ul {
+    display: none;
+  }
+  .head-1st{
+    margin: 0;
+  }
+  .head-title {
+    font-size: 35px;
+    width: 65%;
+    margin-left: 20px;
+  }
+  .head-1st > .every-bio {
+    width: 70%;
+    margin-left: 20px;
+  }
+  .head-btn {
+  height: 50px;
+  
+  margin-right: 0;
+  font-size: 16px;
+}
+.btn-1{
+  margin-left: 20px;
+  margin-right: 5px;
+}
+#special-1{
+  display: none;
+}
+.head-2nd{
+  width: 80%;
+  margin: auto 20px;
+  position: relative;
+}
+.head-2nd img{
+  width: 100%;
+  /* position: absolute; */
+  position: relative;
+}
+  .floating-sec-1 {
+   position: absolute;
+    width: 45%;
+    bottom: 0;
+    left: 0%;
+    padding: 10px 22px;
+  }
+  .floating-sec-2{
+    position: absolute;
+    width: 49%;
+   top: 0px;
+  right: 0;
+  left: 12px;
+    font-size: 13px;
+    padding: 0px 20px;
+  }
+  .floating-sec-1 > .every-bio{
+    font-size: 11px;
+  }
+  .floating-sec-2 .every-bio{
+    font-size: 11px;
+  }
+  .red-circle {
+    width: 39px;
+    height: 39px
+}
+
 }

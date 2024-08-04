@@ -5,16 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-        body{
-            font-family: "Inter", sans-serif;
-
-        }
+       .two{
+        position: relative;
+        width: 500px;
+        height: 500px;
+        margin: 100px auto;
+        border: 2px solid black;
+       }
+       .one{
+        width: 1vw;
+        height: 2vh;
+        background-color: red;
+        position: absolute;
+        top: -10%;
+        left: 20%;
+       }
     </style>
 </head>
 <body>
-    boom boom 
-    <button>submit</button><button>subnit</button>
+<div class="two">
+    <div class="one"></div>
+</div>
 </body>
 </html>
