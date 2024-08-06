@@ -101,7 +101,6 @@ li:nth-child(1) {
   border: 2px solid rgb(230, 83, 60);
   font-size: 18px;
   font-weight: 600;
-  
 }
 .btn-1 {
   background: rgb(230, 83, 60);
@@ -122,7 +121,7 @@ li:nth-child(1) {
   bottom: 61%;
   left: 60%;
 }
-.floating-sec-1 > .every-bio{
+.floating-sec-1 > .every-bio {
   font-size: 13px;
 }
 .floating-sec-2 {
@@ -133,7 +132,7 @@ li:nth-child(1) {
   right: 33%;
   width: 45%;
 }
-.floating-sec-2 .every-bio{
+.floating-sec-2 .every-bio {
   font-size: 13px;
 }
 .red-circle {
@@ -149,21 +148,20 @@ li:nth-child(1) {
   margin-bottom: 00px;
 }
 
-
 @media screen and (max-width: 576px) {
   .head {
     flex-direction: column;
   }
-  .total-width{
+  .total-width {
     width: 100%;
   }
-  .head-1st{
+  .head-1st {
     width: 100%;
   }
   ul {
     display: none;
   }
-  .head-1st{
+  .head-1st {
     margin: 0;
   }
   .head-title {
@@ -176,53 +174,50 @@ li:nth-child(1) {
     margin-left: 20px;
   }
   .head-btn {
-  height: 50px;
-  
-  margin-right: 0;
-  font-size: 16px;
-}
-.btn-1{
-  margin-left: 20px;
-  margin-right: 5px;
-}
-#special-1{
-  display: none;
-}
-.head-2nd{
-  width: 80%;
-  margin: auto 20px;
-  position: relative;
-}
-.head-2nd img{
-  width: 100%;
-  /* position: absolute; */
-  position: relative;
-}
+    height: 50px;
+
+    margin-right: 0;
+    font-size: 16px;
+  }
+  .btn-1 {
+    margin-left: 20px;
+    margin-right: 5px;
+  }
+  #special-1 {
+    display: none;
+  }
+  .head-2nd {
+    width: 89%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .head-2nd img {
+    width: 100%;
+  }
   .floating-sec-1 {
-   position: absolute;
-    width: 45%;
-    bottom: 0;
-    left: 0%;
+    position: absolute;
+    width: 120px;
+    bottom: 570px;
+    left: 240px;
     padding: 10px 22px;
   }
-  .floating-sec-2{
+  .floating-sec-2 {
     position: absolute;
-    width: 49%;
-   top: 0px;
-  right: 0;
-  left: 12px;
-    font-size: 13px;
-    padding: 0px 20px;
+    width: 140px;
+    bottom: 320px;
+    right: 0;
+    left: 30px;
+    font-size: 14px;
+    padding: 10px 20px;
   }
-  .floating-sec-1 > .every-bio{
+  .floating-sec-1 > .every-bio {
     font-size: 11px;
   }
-  .floating-sec-2 .every-bio{
+  .floating-sec-2 .every-bio {
     font-size: 11px;
   }
   .red-circle {
     width: 39px;
-    height: 39px
-}
-
+    height: 39px;
+  }
 }
