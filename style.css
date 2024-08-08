@@ -469,14 +469,16 @@ li:nth-child(1) {
   .third-part-1 {
     width: 100%;
   }
-  .third-part-1>.every-title{
+  .third-part-1 > .every-title {
     text-align: left;
-    width: 50%;
+    width: 70%;
     margin-bottom: 20px;
     margin-left: 20px;
   }
-  .third-part-1 > .every-bio{
+  .third-part-1 > .every-bio {
     text-align: left;
+    /* margin-left: 20px; */
+    width: calc(100% -40px);
     margin-left: 20px;
   }
   .third-part-2 {
@@ -489,18 +491,18 @@ li:nth-child(1) {
 .fourth-part-1 {
   width: 700px;
   margin: auto;
-  margin-top: 75px;
+  margin-top: 100px;
 }
 .fourth-part-1 > .every-title {
   margin-bottom: 15px;
 }
-.fourth-part-main{
+.fourth-part-main {
   background-color: rgb(34, 34, 34);
 }
-.fourth-part-2{
-  margin-top: 85px;
+.fourth-part-2 {
+  margin-top: 48px;
   padding-top: 60px;
-  padding-bottom: 75px;
+  padding-bottom: 105px;
   display: flex;
   justify-content: space-between;
 }
@@ -512,7 +514,7 @@ td,
 th {
   border: 2px solid rgba(255, 255, 255, 0.107);
   width: 170px;
-  padding: 10px 0;
+  padding: 15px 0;
   padding-left: 12px;
   color: rgba(255, 255, 255, 0.5);
   font-size: 15px;
@@ -522,102 +524,213 @@ th {
   text-align: left;
   color: white;
 }
-.fourth-part-box{
+.fourth-part-box {
   width: 590px;
 }
-input,select {
+input,
+select {
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.1);
-  padding: 10px 0;
-  padding-left: 10px;
+  padding: 18px 0;
+  padding-left: 12px;
   border: 0;
   width: 45.5%;
   margin-top: 15px;
   margin-right: 12px;
 }
-select{
+select {
   color: rgba(255, 255, 255, 0.35);
-  width: 47.5%;
+  width: 47.6%;
 }
-.activity{
-  width: 97.5%;
+.activity {
+  width: 98%;
 }
 @media screen and (max-width: 576px) {
-  
-  .fourth-part-2{
+  .fourth-part-2 {
     flex-direction: column;
     padding-top: 30px;
     padding-bottom: 50px;
-    margin-top: 40px;
+    margin-top: 20px;
   }
-  .fourth-part-1{
-    width: 400px;
-    margin-left: 20px;
+  .fourth-part-1 {
+    width: calc(100% - 40px);
     margin-top: 140px;
+    margin-left: 20px;
   }
-  .fourth-part-1 > .every-title{
+  .fourth-part-1 > .every-title {
     text-align: left;
   }
-  .fourth-part-table{
+  .fourth-part-table {
     margin-left: 20px;
   }
-  .fourth-part-box{
-   width: calc(100% - 40px);
+  .fourth-part-box {
+    width: calc(100% - 40px);
     margin: 0 20px;
     margin-top: 40px;
   }
-  input,select{
-    width: 44.5%;
+  input,
+  select {
+    width: 43.5%;
   }
-  select{
-    width: 46.5%;
+  select {
+    width: 46%;
   }
-  .activity{
-    width: 97%;
+  .activity {
+    width: 95.5%;
   }
-  .fourth-part-box > .primary-btn{
+  .fourth-part-box > .primary-btn {
     width: 60%;
   }
 }
- .fifth-part{
-  display: none;
- }
-.fifth-part-2 > .grid > p {
+
+.fifth-part{
+  margin-top: 100px;
+}
+.fifth-part-1{
+  width: 700px;
+  margin: 0 auto;
+}
+.fifth-part-1 > .every-title, .fifth-part-1 > .every-bio{
+  text-align: center;
+}
+.fifth-part-1 > .every-title{
+  margin-bottom: 18px;
+}
+.fifth-part-2 > .grid-five > p {
   position: relative;
-  bottom: 10px;
+  top: 190px;
+  left: 15px;
+  font-size: 17px;
 }
-.fifth-part-2{
+.big {
+  font-weight: 800;
+  margin-bottom: 0;
+}
+.small {
+  font-weight: 100;
+  margin-top: 10px;
+}
+.fifth-part-2 {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 30px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 20px;
+  margin-top: 55px;
 }
-.grid-5-1{
-  background-image: url(images/trainer1.png);
+.grid-five {
+  width: 100%;
+  height: 280px;
+}
+.grid-five-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.4)),
+    url(images/trainer1.png);
   border-radius: 18px;
   background-size: cover;
 }
-.grid-5-2{
-  background-image: url(images/trainer2.png);
+.grid-five-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.4)),
+    url(images/trainer2.png);
   border-radius: 18px;
   background-size: cover;
 }
-.grid-5-3{
-  background-image: url(images/trainer3.png);
+.grid-five-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.4)),
+    url(images/trainer3.png);
   border-radius: 18px;
   background-size: cover;
 }
-.grid-5-4{
-  background-image: url(images/trainer4.png);
+.grid-five-4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.4)),
+    url(images/trainer4.png);
+  border-radius: 18px;
+  background-size: cover;
+  background-position: 400px;
+}
+.grid-five-5 {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.4)),
+    url(images/trainer5.png);
   border-radius: 18px;
   background-size: cover;
 }
-.grid-5-5{
-  background-image: url(images/trainer5.png);
+.grid-five-6 {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.4)),
+    url(images/trainer6.png);
   border-radius: 18px;
   background-size: cover;
 }
-.grid-5-6{
-  background-image: url(images/trainer6.png);
-  border-radius: 18px;
-  background-size: cover;
+@media screen and (max-width: 576px){
+  .fifth-part-1{
+   width: calc(100% - 40px);
+   margin-left: 20px;
+  }
+  .fifth-part-1 > .every-title, .fifth-part-1 > .every-bio{
+    text-align: left;
+  }
+  .fifth-part-2{
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(6,1fr);
+    width: calc(100% - 80px);
+    margin-left: 20px;
+    margin-top: 25px;
+  }
+  .grid-five {
+  width:100%;
+  }
+}
+
+
+footer{
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 110px;
+  margin-bottom: 0px;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  padding-top: 55px;
+  padding-bottom: 40px;
+}
+.footer-sec-1{
+  width: 40%;
+}
+.footer-sec-1 > .every-title{
+  font-style: italic;
+  color: var(--primary-color);
+}
+.help{
+  color: rgba(255, 255, 255, 0.5);
+font-family: Inter;
+font-size: 17.5px;
+}
+.copyright{
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+font-size: 16px;
+font-weight: 400;
+letter-spacing: 0.3px;
+margin: 0;
+padding: 20px 0;
+}
+.footer-sec-1 > .every-title{
+  font-size: 70px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 576px){
+  .footer{
+    flex-direction: column;
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    padding-top: 50px;
+    gap: 35px;
+  }
+  .footer-sec-1 > .every-title{
+    text-align: left;
+    font-size: 60px;
+    margin-bottom: 22px;
+  }
 }
