@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
 body {
   background-color: rgb(0, 0, 0);
   margin: 0;
@@ -88,7 +89,7 @@ li:nth-child(1) {
   align-items: flex-start;
 }
 .head-1st {
-  width: 50%;
+  width: 45%;
   margin-top: 30px;
 }
 .head-title {
@@ -97,6 +98,10 @@ li:nth-child(1) {
   line-height: 120%;
   letter-spacing: 0%;
   text-align: left;
+}
+.span-1{
+  font-family: "Comforter Brush", cursive;
+  font-weight: 550;
 }
 .head-1st > .every-bio {
   margin-bottom: 28px;
@@ -158,6 +163,14 @@ li:nth-child(1) {
 }
 
 @media screen and (max-width: 576px) {
+  header {
+    background: linear-gradient(
+      180deg,
+      rgba(17, 17, 17),
+      rgba(253, 253, 253, 0.108),
+      rgba(17, 17, 17), rgba(17, 17, 17) 100%
+    );
+  }
   .head {
     flex-direction: column;
   }
@@ -183,8 +196,11 @@ li:nth-child(1) {
   }
   .head-title {
     font-size: 35px;
-    width: 65%;
+    width: 55%;
     margin-left: 20px;
+  }
+  .span-1{
+    font-size: 40px;
   }
   .head-1st > .every-bio {
     width: 70%;
@@ -205,8 +221,10 @@ li:nth-child(1) {
   }
   .head-2nd {
     width: 89%;
+    height: 550px;
     margin: 0 auto;
     position: relative;
+    overflow: hidden;
   }
   .head-2nd img {
     width: 100%;
@@ -221,9 +239,9 @@ li:nth-child(1) {
   .floating-sec-2 {
     position: absolute;
     width: 40%;
-    bottom: 20%;
+    bottom: 37%;
     right: 0;
-    left: 5%;
+    left: 1%;
     font-size: 14px;
     padding: 10px;
   }
@@ -307,8 +325,8 @@ li:nth-child(1) {
   gap: 160px;
 }
 .second-part-1 {
-  margin: 40px 55px;
-  width: 50%;
+  margin: 50px 55px;
+  width: 60%;
 }
 .second-part-1 > .every-title {
   margin-top: 0;
@@ -321,11 +339,11 @@ li:nth-child(1) {
   width: 56%;
   height: 17.5%;
   font-size: 18px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .second-part-2 {
   margin: 30px;
-  width: 40%;
+  width: 65%;
 }
 .second-part-pic {
   width: 100%;
@@ -353,7 +371,7 @@ li:nth-child(1) {
     width: 100%;
   }
   .second-part-1 > .every-title {
-    width: 60%;
+    width: 80%;
     text-align: left;
   }
   .second-part-1 > .every-bio {
@@ -466,6 +484,12 @@ li:nth-child(1) {
   .grid > p {
     display: none;
   }
+  .grid-1 {
+    background-position: 25%;
+  }
+  .grid-3{
+    background-position: 65%;
+  }
   .third-part-1 {
     width: 100%;
   }
@@ -534,16 +558,19 @@ select {
   padding: 18px 0;
   padding-left: 12px;
   border: 0;
-  width: 45.5%;
+  width: 46.9%;
   margin-top: 15px;
-  margin-right: 12px;
 }
 select {
   color: rgba(255, 255, 255, 0.35);
-  width: 47.6%;
+  width: 49%;
+  border-right: 12px solid transparent;
 }
 .activity {
-  width: 98%;
+  width: 100%;
+}
+.gap{
+ margin-right: 8px;
 }
 @media screen and (max-width: 576px) {
   .fourth-part-2 {
@@ -563,6 +590,9 @@ select {
   .fourth-part-table {
     margin-left: 20px;
   }
+  th,td{
+    width: 150px;
+  }
   .fourth-part-box {
     width: calc(100% - 40px);
     margin: 0 20px;
@@ -570,13 +600,13 @@ select {
   }
   input,
   select {
-    width: 43.5%;
+    width: 45%;
   }
   select {
-    width: 46%;
+    width: 48.5%;
   }
   .activity {
-    width: 95.5%;
+    width: 100%;
   }
   .fourth-part-box > .primary-btn {
     width: 60%;
@@ -723,10 +753,13 @@ padding: 20px 0;
 @media screen and (max-width: 576px){
   .footer{
     flex-direction: column;
-    width: calc(100% - 40px);
+    width: calc(100% - 20px);
     margin-left: 20px;
     padding-top: 50px;
     gap: 35px;
+  }
+  .footer-sec-1{
+    width: 81%;
   }
   .footer-sec-1 > .every-title{
     text-align: left;
